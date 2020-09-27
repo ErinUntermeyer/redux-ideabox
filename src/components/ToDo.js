@@ -2,13 +2,13 @@ import React from 'react'
 import { toggleToDo } from '../actions'
 import { connect } from 'react-redux'
 
-const ToDo = ({ id, text, completed, toggleToDo }) => {
+const ToDo = ({ id, todo, completed, toggleToDo }) => {
 	return (
 		<li
 			className={ completed ? 'completed' : 'not-completed' }
 			onClick={() => toggleToDo(id)}
 		>
-		{text}
+		{todo}
 		</li>
 	)
 }

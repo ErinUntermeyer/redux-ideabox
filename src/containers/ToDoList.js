@@ -7,9 +7,7 @@ const ToDoList = ({ todos }) => {
 		console.log(todo)
 		return (
 			<ToDo
-				id={todo.id}
-				todo={todo.todo}
-				completed={false}
+				{...todo}
 				key={todo.id}
 			/>
 		)

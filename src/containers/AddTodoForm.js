@@ -37,4 +37,6 @@ const mapDispatchToProps = dispatch => ({
 	addToDo: text => dispatch( addToDo(text) )
 })
 
+// connect will always take two arguments, but if second isn't used, it can be left out. If first isn't used, need to put null. Order matters!
+// ex. connect(mapStateToProps, mapDispatchToProps)(Component)
 export default connect(null, mapDispatchToProps)(AddTodoForm)

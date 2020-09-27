@@ -4,9 +4,12 @@ import { connect } from 'react-redux'
 
 const ToDoList = ({ todos }) => {
 	const displayTodos = todos.map(todo => {
+		console.log(todo)
 		return (
 			<ToDo
-				{...todo}
+				id={todo.id}
+				todo={todo.todo}
+				completed={false}
 				key={todo.id}
 			/>
 		)

@@ -34,7 +34,7 @@ class AddTodoForm extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-	addToDo: text => dispatch( addToDo(text) )
+	addToDo: todo => dispatch( addToDo(todo) )
 })
 
 // connect will always take two arguments, but if second isn't used, it can be left out. If first isn't used, need to put null. Order matters!
